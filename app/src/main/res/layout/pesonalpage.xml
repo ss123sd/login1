@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/personrelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/homepage"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="300dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/im"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/sahla"
+            app:civ_border_color="@color/pink"
+            app:civ_border_width="5dp" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dots_24"
+
+            android:layout_marginLeft="60dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/parts"
+        android:text="الملف الشخصي"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="@color/Dblue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        />
+    <Button
+        android:id="@+id/addme"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/parts"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_bg"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إضافتي كمهني.."
+        android:textColor="@color/lightblue"
+        android:textSize="10dp"
+        android:layout_below="@+id/addme"
+        android:layout_alignParentLeft="true"/>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/parts"
+        android:scrollbarStyle="insideOverlay"
+        android:verticalScrollbarPosition="right"
+        android:layout_marginTop="25dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl"
+
+
+            >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+
+
+                    android:src="@drawable/ic_baseline_person_24"
+                    app:civ_border_color="@color/pink"
+                    app:civ_border_width="5dp"
+                    />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_baseline_person_outline_24"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="إسم المستخدم "
+                    android:textSize="25dp"
+                    android:textColor="@color/Dblue"
+                    android:textColorHint="@color/lightblue"
+
+                    /></LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/phone_24"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="رقم التلفون "
+                    android:textSize="25dp"
+                    android:textColor="@color/Dblue"
+                    android:textColorHint="@color/lightblue"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/email_24"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="الإيميل "
+                    android:textSize="25dp"
+                    android:textColor="@color/Dblue"
+                    android:textColorHint="@color/lightblue"
+                 /></LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/pass_24"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="كلمة المرور "
+                    android:textSize="25dp"
+                    android:textColor="@color/Dblue"
+                    android:textColorHint="@color/lightblue"
+              /></LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="35dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:text="تعديل"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:text="حذف الحساب والخروج"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="30dp"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

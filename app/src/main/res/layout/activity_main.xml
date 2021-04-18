@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/asah"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/im"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/sahla"
+       android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        app:civ_border_color="@color/pink"
+        app:civ_border_width="5dp"
+      />
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تسجيل إشتراك"
+        android:textColor="@color/Dblue"
+        android:layout_below="@id/im"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:layout_below="@+id/log"
+        android:layout_centerInParent="true"
+        android:layoutDirection="rtl"
+        android:padding="40dp"
+        android:id="@+id/L"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_person_outline_24"
+                android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/u_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="إسم المستخدم "
+            android:textSize="25dp"
+            android:textColor="@color/Dblue"
+            android:textColorHint="@color/lightblue"
+            android:inputType="text"
+            android:shadowColor="@color/pink"
+            /></LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/phone_24"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/u_tell"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="رقم التلفون "
+                android:textSize="25dp"
+                android:textColor="@color/Dblue"
+                android:textColorHint="@color/lightblue"
+                android:inputType="number"
+                android:shadowColor="@color/pink"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/email_24"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/u_email"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="الإيميل "
+                android:textSize="25dp"
+                android:textColor="@color/Dblue"
+                android:textColorHint="@color/lightblue"
+                android:inputType="textEmailAddress"
+                android:shadowColor="@color/pink"/></LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/pass_24"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:id="@+id/u_pass"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="كلمة المرور "
+                android:textSize="25dp"
+                android:textColor="@color/Dblue"
+                android:textColorHint="@color/lightblue"
+                android:inputType="textPassword"
+                android:shadowColor="@color/pink"/></LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إشتراك"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/L"
+        android:background="@drawable/button_down"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:clickable="true"
+        android:onClick="regester"
+        />
+
+    <TextView
+        android:id="@+id/loginpage"
+        android:clickable="true"
+        android:onClick="loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تسجيل الدخول"
+        android:textColor="@color/Dblue"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="80dp"
+        tools:ignore="OnClick" />
+
+
+
+</RelativeLayout>

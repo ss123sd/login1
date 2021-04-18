@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/homepage"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/mainpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_view"
+        android:visibility="visible">
+
+        <include layout="@layout/mainpage" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/personpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_view"
+        android:visibility="gone">
+
+        <include layout="@layout/pesonalpage" />
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+
+        app:menu="@menu/bottom_nav_menu"
+        android:layoutDirection="rtl"
+       android:layout_alignParentBottom="true"
+        app:itemTextColor="@drawable/selected"
+app:itemIconTint="@drawable/selected"
+
+        />
+
+
+
+</RelativeLayout>
